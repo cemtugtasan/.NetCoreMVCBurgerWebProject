@@ -1,0 +1,30 @@
+﻿@using FastFoodProject.Presentation.Models.Authentication.SignUp;
+@model SignUpAppUser
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="section_title text-center mb-80">
+				<span>SignUp</span>
+				<h3>You Can Sign Up Here</h3>
+			</div>
+		</div>
+		<form asp-action="SignUp" asp-controller="Home" method="post">
+			<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+			<div class="mt-10 form-group">
+				<input asp-for="Username" type="text" placeholder="UserName"
+					   onfocus="this.placeholder = ''" onblur="this.placeholder = 'UserName'" required
+					   class="single-input form-control">
+				<span asp-validation-for="Username" class="text-danger"></span>
+			</div>
+			<div class="mt-10 form-group">
+				<input asp-for="Password" type="text" placeholder="Password"
+					   onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'" required
+					   class="single-input form-control">
+				<span asp-validation-for="Password" class="text-danger"></span>
+			</div>
+			<div class="mt-10 form-group">
+				<input type="submit" value="Create" class="genric-btn primary-border" />
+			</div>
+		</form>
+	</div>
+</div>

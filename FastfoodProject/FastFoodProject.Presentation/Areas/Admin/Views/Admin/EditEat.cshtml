@@ -1,0 +1,39 @@
+﻿@using FastFoodProject.Presentation.ViewModels.FoodsVms.EatVms;
+
+@model EatDetailVm
+
+@{
+	Layout = "_adminLayout";
+}
+
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="section_title text-center mb-80">
+				<span>Edit Eat</span>
+				<h3>You Can Edit Eat Here</h3>
+			</div>
+		</div>
+		<form enctype="multipart/form-data" method="post">
+			<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+			<div class="mt-10 form-group">
+				<input asp-for="Name" type="text" placeholder="Name"
+					   onfocus="this.placeholder = ''" onblur="this.placeholder = 'Name'" required
+					   class="single-input form-control">
+				<span asp-validation-for="Name" class="text-danger"></span>
+			</div>
+			<div class="mt-10 form-group">
+				<input asp-for="Price" type="text" placeholder="Price"
+					   onfocus="this.placeholder = ''" onblur="this.placeholder = 'Price'" required
+					   class="single-input form-control">
+				<span asp-validation-for="Price" class="text-danger"></span>
+			</div>
+			<div class="mt-10 form-group">
+				<input type="file" name="ImagePath" />
+			</div>
+			<div class="mt-10 form-group">
+				<input type="submit" value="Add" class="genric-btn primary-border" />
+			</div>
+		</form>
+	</div>
+</div>

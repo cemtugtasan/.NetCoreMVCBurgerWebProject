@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "X5jrWjcgPv0pWkSBx0P612hwG1Lah20+hE0EN/Cz9NLKBaDKxCGV0VgCUrAtA3sQcOBjWsYG1gZ/SwQAXx9E6w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\cemtu\\Desktop\\15.05.2023--Proje--CKT\\FastfoodProject\\FastFoodProject.Application\\FastFoodProject.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\cemtu\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

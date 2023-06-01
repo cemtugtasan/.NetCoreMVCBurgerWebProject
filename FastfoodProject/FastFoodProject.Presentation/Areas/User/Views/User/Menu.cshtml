@@ -1,0 +1,429 @@
+﻿@using FastFoodProject.Presentation.Areas.Admin.Models;
+@model AllPropertyInOne
+
+@{
+	Layout = "_userLayout";
+}
+<style>
+	.drinkFlex {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-content: stretch;
+		justify-content: flex-start;
+		align-items: center;
+	}
+</style>
+
+<div class="bradcam_area breadcam_bg overlay">
+	<h3>Menu</h3>
+</div>
+<!-- bradcam_area_end -->
+<!-- best_burgers_area_start  -->
+<div class="best_burgers_area">
+	<div class="container">
+		<div class="">
+			<div class="col-lg-12">
+				<div class="section_title text-center mb-80">
+					<table class="table table-sm table-bordered">
+						<tr><th>ID</th><th>Name</th><th>Price</th><th>Size</th><th>Delete</th></tr>
+						@foreach (var eat in Model.order.Eats)
+						{
+							<tr>
+								<td>@eat.Id</td>
+								<td>@eat.Name</td>
+								<td>@eat.Price</td>
+								<td></td>
+								<td>
+									<a class="btn btn-sm btn-warning" asp-action="DeleteEatsToOrder" asp-route-Id="@eat.Id">
+										Delete
+									</a>
+								</td>
+							</tr>
+						}
+						@foreach (var drink in Model.order.Drinks)
+						{
+							<tr>
+								<td>@drink.Id</td>
+								<td>@drink.Name</td>
+								@{
+									if (drink.DrinkSize == FastFoodProject.Domain.Entities.FoodEntities.DrinkSize.Small)
+									{
+										<td>@(drink.Price - 2)</td>
+									}
+									else if (drink.DrinkSize == FastFoodProject.Domain.Entities.FoodEntities.DrinkSize.Medium)
+									{
+										<td>@drink.Price</td>
+									}
+									else
+									{
+										<td>@(drink.Price + 2)</td>
+									}
+								}
+
+								<td>@drink.DrinkSize</td>
+								<td>
+									<a class="btn btn-sm btn-warning" asp-action="DeleteDrinksToOrder" asp-route-Id="@drink.Id">
+										Delete
+									</a>
+								</td>
+							</tr>
+						}
+						@foreach (var extra in Model.order.Extras)
+						{
+							<tr>
+								<td>@extra.Id</td>
+								<td>@extra.Name</td>
+								<td>@extra.Price</td>
+								<td></td>
+								<td>
+									<a class="btn btn-sm btn-warning" asp-action="DeleteExtrasToOrder" asp-route-Id="@extra.Id">
+										Delete
+									</a>
+								</td>
+							</tr>
+						}
+						@foreach (var menu in Model.order.Menus)
+						{
+							<tr>
+								<td>@menu.Id</td>
+								<td>@menu.Name</td>
+								<td>@menu.Price</td>
+								<td></td>
+								<td>
+									<a class="btn btn-sm btn-warning" asp-action="DeleteMenusToOrder" asp-route-Id="@menu.Id">
+										Delete
+									</a>
+								</td>
+							</tr>
+						}
+					</table>
+					<div>
+						<a class="btn btn-sm btn-warning" asp-action="CreateOrder">
+							Create Order
+						</a>					
+					</div>
+					<div>
+						<h1>
+							@{
+								decimal totalPrice = 0;
+								@foreach (var eat in Model.order.Eats)
+								{
+									totalPrice += eat.Price;
+								}
+								@foreach (var drink in Model.order.Drinks)
+								{
+									if (drink.DrinkSize == FastFoodProject.Domain.Entities.FoodEntities.DrinkSize.Small)
+									{
+										totalPrice += (drink.Price - 2);
+									}
+									else if (drink.DrinkSize == FastFoodProject.Domain.Entities.FoodEntities.DrinkSize.Medium)
+									{
+										totalPrice += (drink.Price);
+									}
+									else
+									{
+										totalPrice += (drink.Price + 2);
+									}
+								}
+								@foreach (var extra in Model.order.Extras)
+								{
+									totalPrice += extra.Price;
+								}
+								@foreach (var menu in Model.order.Menus)
+								{
+									totalPrice += menu.Price;
+								}
+							}
+							TotalPrice: @totalPrice
+						</h1>
+					</div>
+
+					<span>Burgers</span>
+					<h3>Best Ever Burgers</h3>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			@{
+				foreach (var eat in Model.eats)
+				{
+					<div class="col-6">
+						<div class="">
+							<div style="width=300px" class="single_delicious align-items-center">
+								<a asp-action="AddEatsToOrder" asp-controller="User" asp-route-id="@eat.Id">
+									<div class="thumb">
+
+										<img width="120px" height="120px" src="@eat.ImagePath" alt="">
+
+									</div>
+									<div class="info">
+										<h3>@eat.Name</h3>
+										<span>$@eat.Price</span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				}
+			}
+		</div>
+		<div class="col-lg-12">
+			<div class="section_title text-center mb-80">
+				<span>Drinks</span>
+				<h3>Best Ever Drinks</h3>
+			</div>
+		</div>
+		@{
+			foreach (var drink in Model.drinks)
+			{
+				<div class="col-12">
+					<div class="">
+						<div style="" class="single_delicious align-items-center row">
+							<div class="col-4">
+								<a asp-action="AddDrinkToOrder" asp-controller="User" class="drinkFlex" asp-route-size="Large" asp-route-id="@drink.Id">
+									<div class="thumb">
+										<img class="img-fluid img-thumbnail" width="120px" height="120px" src="@drink.ImagePath" alt="">
+									</div>
+									<div class="info">
+										<h3>@drink.Name</h3>
+										<span>$@(drink.Price + 2)</span>
+									</div>
+								</a>
+							</div>
+							<div class="col-4">
+								<a asp-action="AddDrinkToOrder" asp-controller="User" class="drinkFlex" asp-route-size="Medium" asp-route-id="@drink.Id">
+									<div class="thumb">
+										<img class="img-fluid img-thumbnail" width="80px" height="80px" src="@drink.ImagePath" alt="">
+									</div>
+									<div class="info">
+										<h3>@drink.Name</h3>
+										<span>$@drink.Price</span>
+									</div>
+								</a>
+							</div>
+							<div class="col-4">
+								<a asp-action="AddDrinkToOrder" asp-controller="User" class="drinkFlex" asp-route-size="Small" asp-route-id="@drink.Id">
+									<div class="thumb">
+										<img class="img-fluid img-thumbnail" width="40px" height="40px" src="@drink.ImagePath" alt="">
+									</div>
+									<div class="info">
+										<h3>@drink.Name</h3>
+										<span>$@(drink.Price - 2)</span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			}
+		}
+		<div class="col-lg-12">
+			<div class="section_title text-center mb-80">
+				<span>Extras</span>
+				<h3>Best Ever Extras</h3>
+			</div>
+		</div>
+		@{
+			foreach (var extra in Model.extras)
+			{
+				<div class="">
+					<div class="col-xl-5 col-md-5 col-lg-5">
+						<div style="width=300px" class="single_delicious align-items-center">
+							<a asp-action="AddExtrasToOrder" asp-controller="User" asp-route-id="@extra.Id">
+								<div class="thumb">
+
+									<img width="120px" height="120px" src="@extra.ImagePath" alt="">
+
+								</div>
+								<div class="info">
+									<h3>@extra.Name</h3>
+									<span>$@extra.Price</span>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			}
+		}
+		<div class="col-lg-12">
+			<div class="section_title text-center mb-80">
+				<span>Menus</span>
+				<h3>Best Ever Menus</h3>
+			</div>
+		</div>
+		@{
+			foreach (var menu in Model.menus)
+			{
+				<div class="">
+					<div class="col-xl-5 col-md-5 col-lg-5">
+						<div style="width=300px" class="single_delicious align-items-center">
+							<a asp-action="AddMenusToOrder" asp-controller="User" asp-route-id="@menu.Id">
+								<div class="thumb">
+
+									<img width="120px" height="120px" src="@menu.ImagePath" alt="">
+
+								</div>
+								<div class="info">
+									<h3>@menu.Name</h3>
+									<span>$@menu.Price</span>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			}
+		}
+	</div>
+</div>
+<!-- best_burgers_area_end  -->
+<!-- features_room_startt -->
+<!-- features_room_end -->
+<!-- testimonial_area_start  -->
+<div class="testimonial_area ">
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-12">
+				<div class="section_title mb-60 text-center">
+					<span>Testimonials</span>
+					<h3>Happy Customers</h3>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xl-12">
+				<div class="testmonial_active owl-carousel">
+					<div class="single_carousel">
+						<div class="row justify-content-center">
+							<div class="col-lg-8">
+								<div class="single_testmonial text-center">
+									<p>
+										“Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor
+										sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices nec
+										sed
+										neque.
+									</p>
+									<div class="testmonial_author">
+										<div class="thumb">
+											<img src="img/testmonial/1.png" alt="">
+										</div>
+										<h4>Kristiana Chouhan</h4>
+										<div class="stars">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star-half"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="single_carousel">
+						<div class="row justify-content-center">
+							<div class="col-lg-8">
+								<div class="single_testmonial text-center">
+									<p>
+										“Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor
+										sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices nec
+										sed
+										neque.
+									</p>
+									<div class="testmonial_author">
+										<div class="thumb">
+											<img src="img/testmonial/2.png" alt="">
+										</div>
+										<h4>Arafath Hossain</h4>
+										<div class="stars">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star-half"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="single_carousel">
+						<div class="row justify-content-center">
+							<div class="col-lg-8">
+								<div class="single_testmonial text-center">
+									<p>
+										“Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor
+										sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices nec
+										sed
+										neque.
+									</p>
+									<div class="testmonial_author">
+										<div class="thumb">
+											<img src="img/testmonial/3.png" alt="">
+										</div>
+										<h4>A.H Shemanto</h4>
+										<div class="stars">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star-half"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- testimonial_area_ned  -->
+<!-- instragram_area_start -->
+<div class="instragram_area">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-6">
+				<div class="single_instagram">
+					<img src="img/instragram/1.png" alt="">
+					<div class="ovrelay">
+						<a href="#">
+							<i class="fa fa-instagram"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="single_instagram">
+					<img src="img/instragram/2.png" alt="">
+					<div class="ovrelay">
+						<a href="#">
+							<i class="fa fa-instagram"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="single_instagram">
+					<img src="img/instragram/3.png" alt="">
+					<div class="ovrelay">
+						<a href="#">
+							<i class="fa fa-instagram"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="single_instagram">
+					<img src="img/instragram/4.png" alt="">
+					<div class="ovrelay">
+						<a href="#">
+							<i class="fa fa-instagram"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

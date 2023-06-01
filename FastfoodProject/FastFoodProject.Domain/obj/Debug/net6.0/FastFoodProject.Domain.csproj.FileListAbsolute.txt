@@ -1,0 +1,24 @@
+D:\yazılım çalışmaları\visual çalışamaları\karışık random çalışmalar\.Net6CoreMVC\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Domain\bin\Debug\net6.0\FastFoodProject.Domain.deps.json
+D:\yazılım çalışmaları\visual çalışamaları\karışık random çalışmalar\.Net6CoreMVC\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Domain\bin\Debug\net6.0\FastFoodProject.Domain.dll
+D:\yazılım çalışmaları\visual çalışamaları\karışık random çalışmalar\.Net6CoreMVC\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Domain\bin\Debug\net6.0\FastFoodProject.Domain.pdb
+D:\yazılım çalışmaları\visual çalışamaları\karışık random çalışmalar\.Net6CoreMVC\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Domain\obj\Debug\net6.0\FastFoodProject.Domain.csproj.AssemblyReference.cache
+D:\yazılım çalışmaları\visual çalışamaları\karışık random çalışmalar\.Net6CoreMVC\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Domain\obj\Debug\net6.0\FastFoodProject.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\yazılım çalışmaları\visual çalışamaları\karışık random çalışmalar\.Net6CoreMVC\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Domain\obj\Debug\net6.0\FastFoodProject.Domain.AssemblyInfoInputs.cache
+D:\yazılım çalışmaları\visual çalışamaları\karışık random çalışmalar\.Net6CoreMVC\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Domain\obj\Debug\net6.0\FastFoodProject.Domain.AssemblyInfo.cs
+D:\yazılım çalışmaları\visual çalışamaları\karışık random çalışmalar\.Net6CoreMVC\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Domain\obj\Debug\net6.0\FastFoodProject.Domain.csproj.CoreCompileInputs.cache
+D:\yazılım çalışmaları\visual çalışamaları\karışık random çalışmalar\.Net6CoreMVC\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Domain\obj\Debug\net6.0\FastFoodProject.Domain.dll
+D:\yazılım çalışmaları\visual çalışamaları\karışık random çalışmalar\.Net6CoreMVC\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Domain\obj\Debug\net6.0\refint\FastFoodProject.Domain.dll
+D:\yazılım çalışmaları\visual çalışamaları\karışık random çalışmalar\.Net6CoreMVC\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Domain\obj\Debug\net6.0\FastFoodProject.Domain.pdb
+D:\yazılım çalışmaları\visual çalışamaları\karışık random çalışmalar\.Net6CoreMVC\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Domain\obj\Debug\net6.0\ref\FastFoodProject.Domain.dll
+C:\Users\cemtu\Desktop\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Domain\bin\Debug\net6.0\FastFoodProject.Domain.deps.json
+C:\Users\cemtu\Desktop\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Domain\bin\Debug\net6.0\FastFoodProject.Domain.dll
+C:\Users\cemtu\Desktop\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Domain\bin\Debug\net6.0\FastFoodProject.Domain.pdb
+C:\Users\cemtu\Desktop\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Domain\obj\Debug\net6.0\FastFoodProject.Domain.csproj.AssemblyReference.cache
+C:\Users\cemtu\Desktop\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Domain\obj\Debug\net6.0\FastFoodProject.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cemtu\Desktop\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Domain\obj\Debug\net6.0\FastFoodProject.Domain.AssemblyInfoInputs.cache
+C:\Users\cemtu\Desktop\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Domain\obj\Debug\net6.0\FastFoodProject.Domain.AssemblyInfo.cs
+C:\Users\cemtu\Desktop\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Domain\obj\Debug\net6.0\FastFoodProject.Domain.csproj.CoreCompileInputs.cache
+C:\Users\cemtu\Desktop\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Domain\obj\Debug\net6.0\FastFoodProject.Domain.dll
+C:\Users\cemtu\Desktop\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Domain\obj\Debug\net6.0\refint\FastFoodProject.Domain.dll
+C:\Users\cemtu\Desktop\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Domain\obj\Debug\net6.0\FastFoodProject.Domain.pdb
+C:\Users\cemtu\Desktop\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Domain\obj\Debug\net6.0\ref\FastFoodProject.Domain.dll

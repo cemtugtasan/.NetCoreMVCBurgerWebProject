@@ -1,0 +1,30 @@
+D:\yazılım çalışmaları\visual çalışamaları\karışık random çalışmalar\.Net6CoreMVC\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Application\obj\Debug\net6.0\FastFoodProject.Application.csproj.AssemblyReference.cache
+D:\yazılım çalışmaları\visual çalışamaları\karışık random çalışmalar\.Net6CoreMVC\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Application\obj\Debug\net6.0\FastFoodProject.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\yazılım çalışmaları\visual çalışamaları\karışık random çalışmalar\.Net6CoreMVC\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Application\obj\Debug\net6.0\FastFoodProject.Application.AssemblyInfoInputs.cache
+D:\yazılım çalışmaları\visual çalışamaları\karışık random çalışmalar\.Net6CoreMVC\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Application\obj\Debug\net6.0\FastFoodProject.Application.AssemblyInfo.cs
+D:\yazılım çalışmaları\visual çalışamaları\karışık random çalışmalar\.Net6CoreMVC\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Application\obj\Debug\net6.0\FastFoodProject.Application.csproj.CoreCompileInputs.cache
+D:\yazılım çalışmaları\visual çalışamaları\karışık random çalışmalar\.Net6CoreMVC\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Application\bin\Debug\net6.0\FastFoodProject.Application.deps.json
+D:\yazılım çalışmaları\visual çalışamaları\karışık random çalışmalar\.Net6CoreMVC\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Application\bin\Debug\net6.0\FastFoodProject.Application.dll
+D:\yazılım çalışmaları\visual çalışamaları\karışık random çalışmalar\.Net6CoreMVC\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Application\bin\Debug\net6.0\FastFoodProject.Application.pdb
+D:\yazılım çalışmaları\visual çalışamaları\karışık random çalışmalar\.Net6CoreMVC\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Application\bin\Debug\net6.0\FastFoodProject.Domain.dll
+D:\yazılım çalışmaları\visual çalışamaları\karışık random çalışmalar\.Net6CoreMVC\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Application\bin\Debug\net6.0\FastFoodProject.Domain.pdb
+D:\yazılım çalışmaları\visual çalışamaları\karışık random çalışmalar\.Net6CoreMVC\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Application\obj\Debug\net6.0\FastFoodProject.Application.csproj.CopyComplete
+D:\yazılım çalışmaları\visual çalışamaları\karışık random çalışmalar\.Net6CoreMVC\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Application\obj\Debug\net6.0\FastFoodProject.Application.dll
+D:\yazılım çalışmaları\visual çalışamaları\karışık random çalışmalar\.Net6CoreMVC\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Application\obj\Debug\net6.0\refint\FastFoodProject.Application.dll
+D:\yazılım çalışmaları\visual çalışamaları\karışık random çalışmalar\.Net6CoreMVC\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Application\obj\Debug\net6.0\FastFoodProject.Application.pdb
+D:\yazılım çalışmaları\visual çalışamaları\karışık random çalışmalar\.Net6CoreMVC\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Application\obj\Debug\net6.0\ref\FastFoodProject.Application.dll
+C:\Users\cemtu\Desktop\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Application\bin\Debug\net6.0\FastFoodProject.Application.deps.json
+C:\Users\cemtu\Desktop\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Application\bin\Debug\net6.0\FastFoodProject.Application.dll
+C:\Users\cemtu\Desktop\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Application\bin\Debug\net6.0\FastFoodProject.Application.pdb
+C:\Users\cemtu\Desktop\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Application\bin\Debug\net6.0\FastFoodProject.Domain.dll
+C:\Users\cemtu\Desktop\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Application\bin\Debug\net6.0\FastFoodProject.Domain.pdb
+C:\Users\cemtu\Desktop\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Application\obj\Debug\net6.0\FastFoodProject.Application.csproj.AssemblyReference.cache
+C:\Users\cemtu\Desktop\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Application\obj\Debug\net6.0\FastFoodProject.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cemtu\Desktop\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Application\obj\Debug\net6.0\FastFoodProject.Application.AssemblyInfoInputs.cache
+C:\Users\cemtu\Desktop\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Application\obj\Debug\net6.0\FastFoodProject.Application.AssemblyInfo.cs
+C:\Users\cemtu\Desktop\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Application\obj\Debug\net6.0\FastFoodProject.Application.csproj.CoreCompileInputs.cache
+C:\Users\cemtu\Desktop\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Application\obj\Debug\net6.0\FastFoodProject.Application.csproj.CopyComplete
+C:\Users\cemtu\Desktop\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Application\obj\Debug\net6.0\FastFoodProject.Application.dll
+C:\Users\cemtu\Desktop\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Application\obj\Debug\net6.0\refint\FastFoodProject.Application.dll
+C:\Users\cemtu\Desktop\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Application\obj\Debug\net6.0\FastFoodProject.Application.pdb
+C:\Users\cemtu\Desktop\15.05.2023--Proje--CKT\FastfoodProject\FastFoodProject.Application\obj\Debug\net6.0\ref\FastFoodProject.Application.dll
